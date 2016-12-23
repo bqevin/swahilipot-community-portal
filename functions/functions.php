@@ -107,20 +107,7 @@
 
     }
 
-    function sendActivationLink( $regno, $fname, $email){
-
-        $from = "infor@swahilipot.co.ke";
-        $subject = 'Swahilipot Account Activation';
-        $message = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Swahilipot Message</title></head><body style="margin:0px; font-family:Tahoma, Geneva, sans-serif;"><div style="padding:10px; background:#1A237E; font-size:24px; color:#fff;"><a href="http://www.swahilipot.co.ke"><img src="http://www.swahilipot.co.ke/images/logo.png" width="36" height="30" alt="swahilipot" style="border:none; float:left;"></a>swahilipot Account Activation</div><div style="padding:24px; font-size:17px;">Hello '.$fname.',<br /><br />Click the link below to activate your account when ready:<br /><br /><a href="http://www.swahilipot.co.ke/activation.php?id='.$regno.'&username='.$fname.'&email='.$email.'">Click here to activate your account now</a><br /><br />Login after successful activation using your:<br />* E-mail Address: <b>'.$email.'</b></div></body></html>';
-        $headers = "From: $from\n";
-        $headers .= "MIME-Version: 1.0\n";
-        $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-        
-        if(mail($email, $subject, $message, $headers)){
-            $msg = "<p class=\"alert alert-success\" >Activation Link Sent to ".$fname."</p>";
-        }
-        
-    }
+    
 
     function addMember($fields = array()){
       $_db = Database::getInstance();
