@@ -1,0 +1,270 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+*
+*Custom CSS Styling
+*Author: SwahiliPot Developers
+*website : swahilipothub.co.ke
+*
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #f3f3f3;
+  font-family: 'Open Sans', sans-serif;
+  transition: all ease 1s;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Slabo 27px', serif;
+}
+
+.glyphicon{
+  margin-left: 15px;
+  margin-right: 15px;
+  top: 0px;
+}
+
+input[type="checkbox"]{
+  width: 17px; /*Desired width*/
+  height: 17px; /*Desired height*/
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+*
+Heading Bar
+*
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.navbar{
+  position: initial;
+  background: #1A237E;
+  padding: 15px;
+  height: 150px;
+  z-index: -1;
+}
+
+.navbar .pull-left > h2{
+  color: #fff;
+  margin-top: 10px;
+}
+
+.navbar .pull-right{
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.navbar .search{
+  width: 50%;
+  position: absolute;
+  margin: 50px 215px;
+  z-index: 1;
+}
+
+.navbar .search .glyphicon{
+  background: #283591; 
+  border: none; 
+  color: #fff; 
+  padding-left: 20px; 
+  padding-right: 20px;
+}
+
+.navbar .search .form-control{
+  height: 50px;
+  background: #283591;
+  border: none;
+}
+
+.option-btn:hover{
+  cursor: pointer;
+  /*color: #fff;*/
+}
+
+.admin-options{
+  display: none;
+  list-style: none;
+  padding: 10px 0px;
+  background: #f3f3f3;
+  border-radius: 3px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -90px;
+  z-index: 2;
+
+}
+
+.admin-options:before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: solid 10px;
+  border-color: transparent transparent #f3f3f3 transparent;
+  right: 5px;
+  top: -20px;
+}
+
+.option{
+  padding: 8px 30px;
+}
+
+
+.option:hover{
+  background: #fff;
+  color: #9FA8DA;
+}
+
+.navbar .pull-right .img-circle{
+  border: solid 1px #9FA8DA;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+*
+Side Bar Styling
+*
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.sidebar-menu{
+  position: absolute;
+  margin: 0;
+  width: 235px;
+}
+
+.sidebar-menu ul{
+  list-style: none;
+}
+
+.sidebar-menu ul >li a{
+  text-decoration: none;
+  padding:15px 50px 15px 30px;
+  display: block;
+  font-family: 'Slabo 27px', serif;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.sidebar-menu ul >li a:hover{
+  background: #FAFAFA;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+*
+Add User Modal
+*
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.asteric{
+  color: #d50000;
+}
+
+.container-heading{
+  width: 100%;
+  height: 50px;
+  border-bottom: solid #1A237E;
+  margin-bottom: 20px;
+}
+
+.container-heading h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container-heading ul{
+  list-style: none;
+}
+.container-heading ul >li{
+  width: 20%;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+*
+Container Styling
+*
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.dash-container{
+  background: #fff;
+  width: 86%;
+  min-height: 200px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-top: -60px;
+  position: relative;
+  right: -80px;
+}
+
+.listby{
+  margin-left: 30px;
+  width: 100px;
+}
+
+.glyphicon-trash, .glyphicon-edit{
+  margin-left: 0px; 
+}
+
+.glyphicon-lock, .login{
+  margin: 0px;
+}
+
+.glyphicon-trash{
+  color: #f00;
+}
+
+.glyphicon-edit{
+  color: #21d300;;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+*
+Log In Styling
+*
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 30px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+*
+Editview Page Styling
+*
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.list-group-item {
+    position: initial;
+    padding: 10px 15px; 
+    margin-bottom: -1px;
+}
+
+.col-sm-9 {
+    width: 70%;
+    }
